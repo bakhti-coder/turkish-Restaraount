@@ -1,0 +1,80 @@
+@import url(../_global.scss);
+.head__sct__all__rows__child h1 {
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  transition: 10s, visibility 1s;
+  z-index: 100;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color: #009578;
+  border-radius: 50%;
+  -webkit-animation: loading 1s ease infinite;
+          animation: loading 1s ease infinite;
+}
+
+@-webkit-keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+main .popular__sct__all {
+  background: #F8F8F8;
+}
+main .card__sct .container {
+  background: #F4F4F4;
+}
+@media screen and (max-width: 1200px) {
+  main .menu__sct__container__menu__rows1 {
+    flex-wrap: wrap;
+  }
+  main .menu__sct__container__menu__rows1 li {
+    margin-top: 25px;
+  }
+}
+
+.owl-nav {
+  display: none;
+}
+
+@media screen and (max-width: 1400px) {
+  .vidio__sct .container iframe {
+    width: 100%;
+  }
+}/*# sourceMappingURL=index.css.map */
